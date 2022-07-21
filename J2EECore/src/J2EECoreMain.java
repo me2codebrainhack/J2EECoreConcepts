@@ -19,6 +19,11 @@ import module3._methods_overriding.Bmw;
 import module3._methods_overriding.Car;
 import module3._methods_overriding.Merc;
 import module3._problem_statement.CurrentAccountDetails;
+import module4.ExceptionClass;
+import module4.Queue;
+import module4.UtilClass;
+import module4._package.Threads;
+import module4._package.UtilPackage;
 
 import java.util.Scanner;
 
@@ -144,12 +149,11 @@ public class J2EECoreMain {
 
         Constructors cns = new Constructors(24120166,"Mukesh","IT",8600,500,250,2350);
 
-        Lincoln lcn = new Lincoln();
-        Engine V6 = new Engine();
-        V6.setEngine("V6_Powerful");
-        lcn.setColor("Red_Phantom");
-        lcn.setEgne(V6);
-        lcn.lincolnInfo();
+        Engine engine = new Engine();
+        Lincoln lincoln = new Lincoln(engine);
+        lincoln.setColor("Red_Phantom");
+        lincoln.setEngine("V6_TwinTurbo");
+        lincoln.lincolnInfo();
 
         System.out.println("Enter the Type of Account you want to create -> Account SbAccount ");
         Scanner sc = new Scanner(System.in);
@@ -160,5 +164,23 @@ public class J2EECoreMain {
         CurrentAccountDetails cad = new CurrentAccountDetails(45618329,name,amount);
         cad.printCurrentAccountDetails();
 
+        Queue queue = new Queue();
+        queue.createQueue();
+        queue.addElement();
+        queue.removeElement();
+
+        UtilClass util = new UtilClass();
+        util.add();
+        util.subtract();
+        util.divide();
+        util.multiply();
+        util.factorial();
+        util.reverseNumber();
+
+        ExceptionClass exception = new ExceptionClass();
+        exception.arrayIndexOutOfBoundsException();
+
+        Threads threads = new Threads();
+        threads.multiTaskingPrintTablesDisplayEvenNumber();
     }
 }
