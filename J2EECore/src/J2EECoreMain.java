@@ -1,33 +1,12 @@
-import collections.list.ArrayListExamples;
+import collections.list.DoubleLinkedList;
+import collections.list.LinkedListDataStructure;
 import collections.list.LinkedListExamples;
-import module1.DataTypesOperations;
-import module1.ForLoop;
-import module1.IfCondition;
-import module1.WhileLoop;
-import module2._arrays.ArrayTwoDimensional;
-import module2._arrays.Arrays;
-import module2._functions.Functions;
-import module2._functions.FunctionsOverloading;
-import module2.problem_statement.ElectionWinner;
-import module2.problem_statement.ModuleAssignment;
-import module3._classes_objects.Bank;
-import module3._classes_objects.CalculateSalary;
-import module3._classes_objects.Employee;
-import module3._classes_objects.Student;
-import module3._constructors.Constructors;
-import module3._isA_hasA_relation.Engine;
-import module3._isA_hasA_relation.Lincoln;
-import module3._methods_overriding.Bmw;
-import module3._methods_overriding.Car;
-import module3._methods_overriding.Merc;
-import module3._problem_statement.CurrentAccountDetails;
-import module4.ExceptionClass;
-import module4.Queue;
-import module4.UtilClass;
-import module4._package.Threads;
-import module4._package.UtilPackage;
-
-import java.util.Scanner;
+import collections.maps.HashMapExamples;
+import collections.maps.LinkedHashMapExamples;
+import collections.queue.PriorityQueueExamples;
+import collections.set.HashSetExamples;
+import collections.set.LinkedHashSetExamples;
+import collections.set.TreeSetExamples;
 
 public class J2EECoreMain {
     public static void main (String[] args){
@@ -197,8 +176,45 @@ public class J2EECoreMain {
 //        arrayListExamples.joinArrayEmptyList();
 //        arrayListExamples.sizeTrimSizeIncreaseList();
 
-        LinkedListExamples linkedListExamples = new LinkedListExamples();
-        linkedListExamples.appendLinkedList();
+//        LinkedListExamples linkedListExamples = new LinkedListExamples();
+//        linkedListExamples.appendLinkedList();
+
+//        LinkedListDataStructure ll = new LinkedListDataStructure();
+//        ll.insertFirst(3);
+//        ll.insertFirst(4);
+//        ll.insertFirst(6);
+//        ll.insertLast(1);
+//        ll.insert(25,2);
+//        ll.display();
+//
+//        DoubleLinkedList dll = new DoubleLinkedList();
+//        dll.insertFirst(21);
+//        dll.insertLast(2);
+//        dll.insertFirst(11);
+//        dll.insertLast(32);
+//        dll.insertFirst(51);
+//        dll.insert(100,2);
+//        dll.display();
+//        dll.getSize();
+
+//        PriorityQueueExamples priorityQueueExamples = new PriorityQueueExamples();
+//        priorityQueueExamples.createQueue();
+//
+//        HashSetExamples hashSetExamples = new HashSetExamples();
+//        hashSetExamples.createSet();
+//
+//        LinkedHashSetExamples linkedHashSetExamples = new LinkedHashSetExamples();
+//        linkedHashSetExamples.createLinkedHashSet();
+
+//        TreeSetExamples treeSetExamples = new TreeSetExamples();
+//        treeSetExamples.createTreeSet();
+
+//        HashMapExamples hashMapExamples = new HashMapExamples();
+//        hashMapExamples.createHashMap();
+
+        LinkedHashMapExamples linkedHashMapExamples = new LinkedHashMapExamples();
+        linkedHashMapExamples.createLinkedHashMap();
+
 
     }
 }
